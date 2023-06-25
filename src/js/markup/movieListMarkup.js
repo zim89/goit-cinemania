@@ -23,7 +23,7 @@ export const movieListMarkup = movie => {
 
   const genres = getGenreNames(genre_ids)[0];
 
-  markup = `
+  const markup = `
     <li class="movie__item" data-movie-id="${id}" ${posterBgStyles}>
       <h3 class="movie__title">${title || original_title}</h3>
       <div class="movie__meta">
@@ -73,7 +73,7 @@ export const libMovieListMarkup = movie => {
 
   const genreList = genres.map(genre => genre.name)[0];
 
-  markup = `
+  const markup = `
     <li class="movie__item" data-movie-id="${id}" ${posterBgStyles}>
       <h3 class="movie__title">${title || original_title}</h3>
       <div class="movie__meta">
