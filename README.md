@@ -1,3 +1,14 @@
+### FSON-78
+
+[Материалы к проекту по JS](https://docs.google.com/presentation/d/1t0l_qImtmiewNc0ZY3J5ll5_ySuybEDZ/edit#slide=id.p5)
+[Figma](https://www.figma.com/file/z7VY1GvA5xVR2ix7xeOfxx/Cinemania?type=design&node-id=0-1&t=HLc1o8WlA88QnXgE-0)
+[ТЗ](https://docs.google.com/spreadsheets/d/1anL-zBZxQ6vnTtk5qPPqPZqFdQ6aqcEkNlan3SbmpG0/edit#gid=0)
+
+### FSON-80
+
+[Figma](<https://www.figma.com/file/NW29W0zBlLZTjNB1gewxJa/Bookshelf-(Copy)?type=design&node-id=0-1&t=uQiOd5PjLE8wpuMH-0>)
+[ТЗ](https://docs.google.com/spreadsheets/d/1p2P89GVo0HYGW2h2dXxrxxjMbpAB5T8RG-wy4oaEkNw/edit#gid=0)
+
 # Parcel template
 
 Этот проект был создан при помощи Parcel. Для знакомства и настройки

@@ -1,0 +1,39 @@
+.footer {
+  padding: 28px 0;
+
+  @include screen(tablet) {
+    padding: 40px 0;
+  }
+
+  @include screen(desktop) {
+    padding: 80px 0;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+
+    @include screen(tablet) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 3px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.14;
+    color: $text-color-grey;
+
+    @include screen(tablet) {
+      font-size: 16px;
+      line-height: 1.19;
+    }
+  }
+
+  &__icon {
+    color: $text-color-accent;
+  }
+}

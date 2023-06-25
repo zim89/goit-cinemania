@@ -28,10 +28,10 @@
 
 // MEDIA
 @mixin screen($size) {
-  $desktop: '(min-width: 1440px)';
+  $desktop: '(min-width: 1280px)';
   $tablet: '(min-width: 768px)';
   $mobile-max: '(max-width: 767px)';
-  $mobile: '(min-width: 428px)';
+  $mobile: '(min-width: 320px)';
 
   @if $size == desktop {
     @media only screen and #{$desktop} {

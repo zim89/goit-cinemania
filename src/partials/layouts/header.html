@@ -1,0 +1,61 @@
+<header class="header">
+  <div class="container">
+    <div class="header__wrap">
+      <a class="logo" href="index.html">
+        <svg class="logo__icon">
+          <use href="./images/symbol-defs.svg#logo"></use>
+          <span class="logo__text">Cinemania</span>
+        </svg>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="./catalog.html" class="nav__link">Catalog</a>
+          </li>
+          <li class="nav__item">
+            <a href="./library.html" class="nav__link">My library</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="burger header__menu-open js-open-menu">Menu</button>
+      <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu__container">
+          <a class="logo mobile-menu__logo" href="index.html">
+            <svg class="logo__icon">
+              <use href="./images/symbol-defs.svg#logo"></use>
+              <span class="logo__text">Cinemania</span>
+            </svg>
+          </a>
+
+          <ul class="js-link-list">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="/src/index.html">Home</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="/src/catalog.html">CATALOG</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link" href="/src/library.html"
+                >my library</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="switcher">
+        <input type="checkbox" class="switcher__checkbox" id="switcher" />
+        <label for="switcher" class="switcher__label">
+          <i class="switcher_icon fa-solid fa-moon"></i>
+          <i class="switcher_icon fa-regular fa-sun fa-sm"></i>
+          <span class="ball"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,33 @@
+.nav {
+  display: none;
+
+  @include screen(tablet) {
+    display: block;
+  }
+
+  &__list {
+    display: flex;
+    gap: 32px;
+
+    @include screen(desktop) {
+      gap: 40px;
+    }
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $text-color-grey;
+    text-transform: uppercase;
+    transition: color $transition-dur-func;
+
+    &:hover {
+      color: $text-color-secondary;
+    }
+
+    &--active {
+      color: $text-color-accent;
+    }
+  }
+}

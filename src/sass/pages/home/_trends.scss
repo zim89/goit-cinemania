@@ -1,0 +1,51 @@
+.trends {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-transform: uppercase;
+
+    @include screen(tablet) {
+      font-size: 24px;
+      line-height: 1.17;
+    }
+
+    @include screen(desktop) {
+      font-size: 28px;
+      line-height: 1.22;
+    }
+  }
+
+  &__link {
+    color: $text-color-accent;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    transition: color $transition-dur-func;
+
+    @include screen(tablet) {
+      font-size: 24px;
+      line-height: 1.17;
+    }
+
+    @include screen(desktop) {
+      font-size: 28px;
+      line-height: 1.22;
+    }
+
+    &:hover {
+      color: $text-color-primary;
+    }
+  }
+}

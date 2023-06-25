@@ -1,0 +1,25 @@
+.catalog {
+  &__form {
+    margin-bottom: 16px;
+
+    @include screen(tablet) {
+      margin-bottom: 36px;
+    }
+
+    @include screen(desktop) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 20px;
+
+    @include screen(tablet) {
+      margin-bottom: 44px;
+    }
+
+    @include screen(desktop) {
+      margin-bottom: 60px;
+    }
+  }
+}

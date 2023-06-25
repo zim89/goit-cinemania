@@ -1,14 +1,11 @@
 .section {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 40px;
 
   @include screen(tablet) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 44px;
   }
 
   @include screen(desktop) {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 80px;
   }
 }

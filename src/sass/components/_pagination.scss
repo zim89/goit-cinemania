@@ -1,0 +1,132 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  color: $color-grey;
+
+  @include screen(tablet) {
+    gap: 16px;
+    font-size: 14px;
+  }
+
+  &__disabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    color: $color-grey-dark;
+    border: 1px solid $color-grey-dark;
+    border-radius: 50%;
+    cursor: auto;
+
+    @include screen(tablet) {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid $color-grey;
+    border-radius: 50%;
+    transition: all $transition-dur-func;
+
+    @include screen(tablet) {
+      width: 40px;
+      height: 40px;
+    }
+
+    &--next {
+      display: flex;
+      padding-bottom: 2px;
+
+      &::after {
+        content: '\203A';
+        font-size: 20px;
+        display: inline-block;
+
+        @include screen(tablet) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &--last {
+      display: flex;
+      padding-bottom: 2px;
+
+      &::after {
+        content: '\00BB';
+        font-size: 20px;
+        display: inline-block;
+
+        @include screen(tablet) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &--prev {
+      display: flex;
+      padding-bottom: 2px;
+
+      &::after {
+        content: '\2039';
+        font-size: 20px;
+        display: inline-block;
+
+        @include screen(tablet) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &--first {
+      display: flex;
+      padding-bottom: 2px;
+
+      &::after {
+        content: '\00AB';
+        font-size: 20px;
+        display: inline-block;
+
+        @include screen(tablet) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    &:hover,
+    &:focus {
+      color: $text-color-accent;
+      background: linear-gradient($color-white, $color-white) padding-box,
+        $bg-gradient border-box;
+    }
+
+    &--current {
+      border-color: transparent;
+      background: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%)
+        border-box;
+      color: $text-color-primary;
+
+      &:hover,
+      &:focus {
+        background: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%)
+          border-box;
+        color: $text-color-primary;
+      }
+    }
+  }
+
+  &__ico {
+    display: inline-block;
+  }
+}

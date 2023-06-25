@@ -1,0 +1,58 @@
+.switcher {
+  &__checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+
+  &__label {
+    background: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
+    border-radius: 194px;
+    width: 44px;
+    height: 18px;
+    padding: 4px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include screen(tablet) {
+      padding: 4px 8px;
+      width: 60px;
+      height: 24px;
+    }
+
+    & .ball {
+      background-color: #fff;
+      width: 14px;
+      height: 14px;
+      position: absolute;
+      left: 3px;
+      top: 2px;
+      border-radius: 50%;
+      transition: transform $transition-dur-func;
+
+      @include screen(tablet) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  & svg {
+    width: 12px;
+    height: 12px;
+
+    @include screen(tablet) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.switcher__checkbox:checked + .switcher__label .ball {
+  transform: translateX(24px);
+  @include screen(tablet) {
+    transform: translateX(34px);
+  }
+}

@@ -1,0 +1,280 @@
+.modal {
+  position: relative;
+  width: 280px;
+  max-height: 100vh;
+  overflow: auto;
+  background: $bg-dark;
+  box-shadow: 1px 1px 14px 4px rgba(255, 107, 8, 0.42);
+  border-radius: 16px;
+  padding: 52px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  @include screen(tablet) {
+    width: 704px;
+    height: auto;
+    padding: 44px 44px;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  @include screen(desktop) {
+    width: 846px;
+    padding: 60px 60px;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    color: $text-color-secondary;
+    font-size: 20px;
+    font-weight: 400;
+    transition: color $transition-dur-func;
+
+    &:hover {
+      color: $text-color-accent;
+    }
+  }
+
+  &__thumb {
+    & > img {
+      border-radius: 5px;
+      object-fit: cover;
+
+      @include screen(tablet) {
+        width: 294px;
+      }
+    }
+  }
+
+  &__image {
+    border-radius: 5px;
+
+    @include screen(tablet) {
+      width: 294px;
+      object-fit: contain;
+    }
+
+    @include screen(desktop) {
+      width: 375px;
+    }
+  }
+
+  &__title {
+    font-weight: $fw-medium;
+    font-size: 20px;
+    line-height: 1.15;
+    margin-bottom: 29px;
+
+    @include screen(tablet) {
+      font-size: 24px;
+      line-height: 1.17;
+      margin-bottom: 26px;
+    }
+
+    @include screen(desktop) {
+      line-height: 1.33;
+      margin-bottom: 28px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+
+    @include screen(tablet) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    gap: 60px;
+    font-weight: $fw-medium;
+    font-size: 14px;
+    line-height: 1.14;
+
+    @include screen(desktop) {
+      font-size: 16px;
+      line-height: 1.19;
+    }
+  }
+
+  &__desc {
+    min-width: 80px;
+    color: $text-color-grey;
+
+    @include screen(desktop) {
+      min-width: 89px;
+    }
+  }
+
+  &__about {
+    margin-bottom: 16px;
+
+    @include screen(tablet) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__subtitle {
+    color: $text-color-grey;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+
+    @include screen(tablet) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text {
+    font-weight: $fw-regular;
+    font-size: 12px;
+    line-height: 1.67;
+    color: $text-color-secondary;
+
+    @include screen(desktop) {
+      font-size: 14px;
+      line-height: 1.43;
+    }
+  }
+
+  &__picture {
+    display: block;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.d-modal {
+  position: relative;
+  width: 280px;
+  padding: 0 30px;
+  padding-top: 39px;
+  padding-bottom: 8px;
+  background: $bg-dark;
+  box-shadow: 1px 1px 14px 4px rgba(255, 107, 8, 0.42);
+  border-radius: 16px;
+
+  @include screen(tablet) {
+    width: 609px;
+    height: 400px;
+    padding: 0 44px;
+    padding-top: 132px;
+  }
+
+  @include screen(desktop) {
+    width: 700px;
+    padding: 0 50px;
+    padding-top: 150px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    color: $text-color-secondary;
+    font-size: 20px;
+    font-weight: 400;
+    transition: color $transition-dur-func;
+
+    &:hover {
+      color: $text-color-accent;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 24px;
+
+    @include screen(tablet) {
+      font-size: 24px;
+      line-height: 1.17;
+      position: absolute;
+      top: 132;
+      left: 44;
+    }
+
+    @include screen(tablet) {
+      top: 150;
+      left: 50;
+    }
+  }
+
+  &__picture {
+    display: block;
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include screen(tablet) {
+      width: 296px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    @include screen(desktop) {
+      position: absolute;
+      width: 363px;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+.iframe {
+  position: relative;
+  border: 1px solid $text-color-accent;
+  border-radius: 8px;
+  width: 280px;
+  height: 300px;
+
+  @include screen(tablet) {
+    width: 609px;
+    height: 400px;
+  }
+
+  @include screen(desktop) {
+    width: 700px;
+    height: 400px;
+  }
+
+  &__close {
+    position: absolute;
+    z-index: 1000;
+    top: -30;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    color: $text-color-secondary;
+    font-size: 20px;
+    font-weight: 400;
+    transition: color $transition-dur-func;
+
+    &:hover {
+      color: $text-color-accent;
+    }
+  }
+}

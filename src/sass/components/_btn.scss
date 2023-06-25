@@ -1,0 +1,59 @@
+.btn-group {
+  display: flex;
+  gap: 8px;
+
+  @include screen(desktop) {
+    gap: 14px;
+  }
+}
+
+.btn {
+  font-weight: $fw-medium;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.17;
+  padding: 12px 24px;
+
+  border-radius: 74px;
+
+  @include screen(tablet) {
+    font-size: 14px;
+    line-height: 1.43;
+    padding: 10px 24px;
+  }
+
+  @include screen(desktop) {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 12px 24px;
+  }
+
+  &--primary {
+    color: $text-color-dark;
+    background: $bg-gradient border-box;
+    transition: all $transition-dur-func;
+    border: 1px solid transparent;
+
+    &:focus-visible,
+    &:hover {
+      color: $text-color-accent;
+      background: linear-gradient($color-dark, $color-dark) padding-box,
+        $bg-gradient border-box;
+    }
+  }
+
+  &--secondary {
+    color: $text-color-primary;
+    background: linear-gradient($color-dark, $color-dark) padding-box,
+      $bg-gradient border-box;
+    transition: all $transition-dur-func;
+    border: 1px solid transparent;
+
+    &:focus-visible,
+    &:hover {
+      color: $text-color-accent;
+      background: linear-gradient($bg-white, $bg-white) padding-box,
+        $bg-white border-box;
+    }
+  }
+}

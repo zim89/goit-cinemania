@@ -1,2 +1,47 @@
-@import './common';
-@import './example';
+// VENDORS
+@import './vendors/normalize';
+
+// UTILS
+@import './utils/variables';
+@import './utils/vhidden';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/animations';
+
+// BASE
+@import './base/reset';
+@import './base/base';
+
+//COMPONENTS
+@import './components/section';
+@import './components/container';
+@import './components/title';
+@import './components/text';
+@import './components/btn';
+@import './components/rating';
+@import './components/burger';
+@import './components/switcher';
+@import './components/logo';
+@import './components/modal';
+@import './components/tag';
+@import './components/movie-list';
+@import './components/form-cat';
+@import './components/pagination';
+@import './components/dropdown';
+@import './components/go-top-btn';
+
+// LAYOUT
+@import './layout/nav';
+@import './layout/header';
+@import './layout/footer';
+
+// HOME page
+@import './pages/home/hero';
+@import './pages/home/trends';
+@import './pages/home/upcoming';
+
+// CATALOG page
+@import './pages/catalog/catalog';
+
+// LIBRARY page
+@import './pages/library/library';

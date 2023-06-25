@@ -1,0 +1,63 @@
+.form-cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  &__input {
+    width: 224px;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    background: transparent;
+    border: 1px solid $color-white;
+    border-radius: 8px;
+    color: $text-color-primary;
+
+    @include screen(tablet) {
+      padding: 12px 20px;
+    }
+
+    @include screen(desktop) {
+      font-size: 16px;
+      line-height: 1.19;
+      width: 334px;
+      padding: 14px 24px;
+    }
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: $text-color-primary;
+    font-size: 16px;
+    background: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%)
+      border-box;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: all $transition-dur-func;
+
+    &:hover,
+    &:focus {
+      color: $text-color-accent;
+      background: linear-gradient($color-white, $color-white) padding-box,
+        $bg-gradient border-box;
+    }
+
+    @include screen(tablet) {
+      font-size: 18px;
+      width: 44px;
+      height: 44px;
+    }
+
+    @include screen(desktop) {
+      font-size: 20px;
+      width: 44px;
+      height: 44px;
+    }
+  }
+}

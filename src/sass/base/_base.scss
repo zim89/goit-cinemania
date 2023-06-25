@@ -4,7 +4,35 @@ html {
 
 body {
   color: $text-color-primary;
+  background-color: $bg-dark;
   font-size: 14px;
   font-weight: 400;
   font-family: $font-primary;
+  transition: background-color $transition-dur-func;
+
+  &[data-theme='light'] {
+    color: $text-color-dark;
+    background-color: $bg-white;
+
+    & .header {
+      background-color: $bg-white;
+    }
+
+    & .hero {
+      background-color: $bg-dark;
+    }
+
+    & .movie__title {
+      color: $text-color-primary;
+    }
+
+    & .upcoming__text {
+      color: $color-grey-dark;
+    }
+  }
+}
+
+.test {
+  height: 100vh;
+  background-color: $bg-white;
 }

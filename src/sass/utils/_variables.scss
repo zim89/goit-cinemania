@@ -1,27 +1,38 @@
 /* FONTS */
-$font-primary: 'DM Sans', sans-serif;
+$font-primary: 'Roboto', sans-serif;
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
 
 /* COLOR */
-// $accent-color: #e7e9fc;
+$color-dark: #111111;
+$color-dark-light: #282828;
+$color-white: #ffffff;
+$color-accent: #f87719;
+$color-grey-dark: #595959;
+$color-grey: #b7b7b7;
+$color-grey-light: #f8f8f8;
 
 /* TEXT COLOR */
-$text-color-primary: #121212;
-$text-color-secondary: #f7f7f7;
-$text-color-black: #000000;
-$text-color-gray: #484848;
-$text-color-gray-light: #d8d7d7;
-$text-color-fone: #f6f6f6;
-$text-color-muted: rgba(216, 215, 215, 0.5);
+$text-color-primary: #ffffff;
+$text-color-secondary: #f8f8f8;
+$text-color-accent: #f87719;
+$text-color-dark: #111111;
+$text-color-grey: #b7b7b7;
 
 /* BACKGROUND COLOR */
-$bg-color-dark: #121212;
-$bg-color-light: #f7f7f7;
-$bg-color-white: #ffffff;
-$bg-color-fone: #f6f6f6;
+$bg-dark: #111111;
+$bg-white: #ffffff;
+
+$bg-gradient: linear-gradient(141.22deg, #ffc226 9.4%, #f84119 91.91%);
+$bg-gradient-rev: linear-gradient(
+  141.22deg,
+  #f84119 9.4%,
+  rgba(248, 159, 25, 0.68) 91.91%
+);
 
 /* BORDER COLOR */
-$border-color-dark: #121212;
-$border-color-light: #f7f7f7;
 
 /* OTHER */
 $transition-dur-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -31,8 +42,3 @@ $stroke-color-menu: #000000;
 $stroke-color-icon: rgba(0, 0, 0, 0.1);
 $fill-color-icon: #ffffff;
 $background-color-icon: #285aeb;
-
-/* swiper */
-$btn-disabled: rgba(18, 18, 18, 0.3);
-
-/* FONTS */

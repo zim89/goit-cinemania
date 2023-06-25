@@ -1,0 +1,30 @@
+<section class="section library">
+  <div class="container">
+    <div class="library__wrap">
+      <div class="dropdown library__dropdown">
+        <input
+          type="checkbox"
+          class="dropdown__switch"
+          id="filter-switch"
+          hidden
+        />
+        <label for="filter-switch" class="dropdown__options-filter">
+          <ul class="dropdown__filter" role="listbox" tabindex="-1">
+            <li class="dropdown__filter-selected" aria-selected="true">All</li>
+            <li>
+              <ul class="dropdown__select">
+                <li class="dropdown__select-option" role="option">All</li>
+              </ul>
+            </li>
+          </ul>
+        </label>
+      </div>
+
+      <ul class="movie__list library__list"></ul>
+
+      <button type="button" class="btn btn--primary library__btn vhidden">
+        Load more
+      </button>
+    </div>
+  </div>
+</section>
